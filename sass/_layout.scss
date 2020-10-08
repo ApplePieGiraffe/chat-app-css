@@ -19,11 +19,15 @@ body {
         position: absolute;
         top: 0;
         left: -20rem;
-        height: 80rem;
+        height: 60rem;
         width: 60rem;
         border-bottom-left-radius: 1000px;
         border-bottom-right-radius: 1000px;
         background: linear-gradient(to top right, var(--color-light-violet), var(--color-light-magenta));
+
+        @media only screen and (min-width: 800px) {
+            height: 80rem;
+        }
     }
 
     &::after {
@@ -37,6 +41,10 @@ body {
         border-top-right-radius: 1000px;
         background-color:  	hsl(290, 37%, 97%);
         z-index: -10;
+
+        @media only screen and (min-width: 800px) {
+            height: 60rem;
+        }
     }
 }
 
@@ -80,7 +88,11 @@ h1 {
     margin-bottom: 3rem;
     color: var(--color-very-dark-desaturated-violet);
     font-size: 4.5rem;
-    font-weight: 700;
+    font-weight: 500;
+
+    @media only screen and (min-width: 400px) {
+        font-size: 5rem;
+    }
 }
 
 p {

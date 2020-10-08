@@ -284,11 +284,14 @@ body {
     position: absolute;
     top: 0;
     left: -20rem;
-    height: 80rem;
+    height: 60rem;
     width: 60rem;
     border-bottom-left-radius: 1000px;
     border-bottom-right-radius: 1000px;
     background: linear-gradient(to top right, var(--color-light-violet), var(--color-light-magenta)); }
+    @media only screen and (min-width: 800px) {
+      .main-wrapper::before {
+        height: 80rem; } }
   .main-wrapper::after {
     content: '';
     position: absolute;
@@ -300,6 +303,9 @@ body {
     border-top-right-radius: 1000px;
     background-color: #f9f5fa;
     z-index: -10; }
+    @media only screen and (min-width: 800px) {
+      .main-wrapper::after {
+        height: 60rem; } }
 
 .phone-wrapper {
   display: flex;
@@ -336,7 +342,10 @@ h1 {
   margin-bottom: 3rem;
   color: var(--color-very-dark-desaturated-violet);
   font-size: 4.5rem;
-  font-weight: 700; }
+  font-weight: 500; }
+  @media only screen and (min-width: 400px) {
+    h1 {
+      font-size: 5rem; } }
 
 p {
   color: var(--color-dark-greyish-violet);
