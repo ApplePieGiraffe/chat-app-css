@@ -1,0 +1,18 @@
+{
+  "name": "chat-app-css-illustration",
+  "version": "1.0.0",
+  "description": "A challenge from Frontend Mentor",
+  "main": "index.html",
+  "scripts": {
+    "go": "node-sass --watch ./sass/main.scss ./css/style.css"
+  },
+  "keywords": [],
+  "author": "Joshua Woodson",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}

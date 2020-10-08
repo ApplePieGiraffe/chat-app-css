@@ -1,0 +1,190 @@
+.phone {
+    position: relative;
+    width: 34rem;
+    border-radius: 4rem;
+    padding: 1.5rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .15);
+    background-color: white;
+
+    &__screen {
+        height: 100%;
+        width: 100%;
+        border-radius: 2.75rem;
+        overflow: hidden;
+    }
+
+    &__notch {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        height: 2.5rem;
+        width: 16rem;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background-color: var(--color-white);
+    }
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--color-light-greyish-violet);
+    overflow: hidden;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: .75rem;
+        padding: 1rem;
+        padding-top: 3.75rem;
+        padding-bottom: 1.5rem;
+        border-radius: 1rem;
+        background: linear-gradient(to right, var(--color-light-violet), var(--color-light-magenta));
+
+        .chevron-left {
+            height: 3rem;
+            margin-right: 1rem;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+
+            &__avatar {
+                height: auto;
+                width: 4rem;
+                margin-right: 1.25rem;
+                border: 2px solid var(--color-white);
+                border-radius: 50%;
+            }
+
+            &__text-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                color: var(--color-white);
+            }
+
+            &__name {
+                margin-bottom: .25rem;
+                font-size: 1.75rem;
+                font-weight: 500;
+            }
+
+            &__status {
+                color: var(--color-pale-violet);
+                font-size: .25rem;
+            }
+        }
+
+        .ellipsis {
+            height: 2.5rem;
+
+            & * {
+                fill: var(--color-white);
+            }
+        }
+    }
+
+    .message {
+        max-width: 18rem;
+        padding: 1rem;
+        border-radius: 10px;
+
+        &__dog-walker {
+            margin: .5rem;
+            margin-left: 1.25rem;
+            border-bottom-left-radius: 2px;
+            background-color: hsl(277, 33%, 92%);
+            color: var(--color-moderate-violet);
+        }
+
+        &__client {
+            align-self: flex-end;
+            margin: .5rem;
+            margin-right: 1.25rem;
+            border-bottom-right-radius: 2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+            background-color: var(--color-white);
+            color: var(--color-very-dark-desaturated-violet);
+        }
+    }
+
+    .images-wrapper {
+        align-self: flex-end;
+        margin-top: 1.25rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1rem;
+
+        img {
+            height: 5rem;
+            width: auto;
+            border-radius: 10px;
+
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .option {
+        display: flex;
+        align-items: center;
+        max-width: 22rem;
+        margin: .5rem;
+        margin-left: 1.25rem;
+        padding: 1rem;
+        border-radius: 10px;
+        border-bottom-left-radius: 2px;
+        background: linear-gradient(to right, var(--color-light-violet), var(--color-light-magenta));
+        color: white;
+
+        svg {
+            height: 2rem;
+            width: auto;
+            margin-right: 1rem;
+        }
+
+        &__title {
+            margin-right: auto;
+        }
+
+        &__price {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+    }
+
+    .text-field {
+        display: flex;
+        align-items: center;
+        margin: 1.25rem;
+        padding: 1rem;
+        border-radius: 50px;
+        background-color: white;
+
+        &__placeholder-text {
+            margin-left: 1.5rem;
+            margin-right: auto;
+            color: var(--color-greyish-blue);
+            font-size: 1.25rem;
+        }
+
+        &__send-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.25rem;
+            width: 3.25rem;
+            border-radius: 50%;
+            background-color: var(--color-very-dark-desaturated-violet);
+
+            svg {
+                height: 2rem;
+                width: auto;
+            }
+        }
+    }
+}
